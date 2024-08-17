@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+         .container{
+             display:  grid;
+             height: 100vh;
+             grid-template-columns: 1fr 150px;
+
+             grid-template-rows: 50px 75px  1fr 25px;
+
+             grid-template-areas: 
+               "title title"
+               "nav sidebar"
+               "content sidebar"
+               "footer footer";
+          }
+          .item-1{
+                grid-area: title;
+                background-color: rgb(78, 78, 194);
+            }
+           .item-2{
+               grid-area: nav;
+               background-color: rgb(131, 131, 230);
+               display: flex;
+               justify-content: space-evenly;
+               align-items: center;
+           }
+
+           .item-2 a{
+                text-decoration: none;
+                color: white;
+                font-size: larger;
+           }
+
+           .item-3{
+               grid-area: sidebar;
+               background-color: wheat;
+           }
+           .item-4{
+               grid-area: content;
+           }    
+              .item-5{
+                grid-area: footer;
+                background-color: rgb(78, 78, 194);
+
+              }
+               
+
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="item-1"> Title </div>
+         <div class="item-2">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+         </div>
+
+         <div class="item-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum consectetur porro laboriosam temporibus tenetur voluptate aliquid sit perferendis nemo veniam minima ut quidem similique sunt, labore voluptatum necessitatibus mollitia alias?
+         </div>
+
+         <div class="item-4">
+            <h1>Main Content</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum repudiandae obcaecati, quidem ab corrupti, id reiciendis cum aspernatur odio sit officia corporis earum reprehenderit, dolorum ea enim tenetur. Quibusdam numquam magnam, repudiandae dolorem impedit perferendis amet, assumenda asperiores officiis modi dicta ducimus! Nostrum ipsa voluptatem, ab possimus aliquam rerum error velit doloremque cumque blanditiis, ex placeat necessitatibus itaque quibusdam id voluptate dolores aliquid molestiae, quam sint? Recusandae harum, totam eos ullam consequatur, placeat aut nulla voluptate accusantium iure possimus. Velit laborum consequuntur officia culpa eum accusamus odio labore animi, eos aliquam minus. Omnis labore corporis quisquam cum sit. Quae, nulla.</p>
+         </div>
+
+         <div class="item-5">
+            Closing Notes
+         </div>
+    </div>
+</body>
+</html>
